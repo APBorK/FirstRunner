@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SpeedController : MonoBehaviour
 {
+    // Скрипт отвечает за скорость объектов
     public static int SpawnCount;
     public static int ImpingementCount;
    
@@ -19,6 +20,7 @@ public class SpeedController : MonoBehaviour
 
         if (ImpingementCount == 1)
         {
+            ++MoveBot.speed;
             --MovePlayer.speed;
             ImpingementCount = 0;
         }

@@ -20,7 +20,8 @@ public class SpawnScene : MonoBehaviour
 
     void Spawn()
     {
-        Vector3 spawnPos = new Vector3(spawn.position.x, spawn.position.y, spawn.position.z + Memory.NextPositionScene );
+        Vector3 spawnPos = new Vector3(spawn.position.x, spawn.position.y, 
+            spawn.position.z + Memory.NextPositionScene );
         Instantiate(scene, spawnPos, Quaternion.identity);
     }
 }

@@ -38,8 +38,8 @@ public class GameOver : MonoBehaviour
     }
     void OnGUI()
     {
-        GUI.Box(new Rect(0,0,100,30), "Life = " );
+        GUI.Box(new Rect(0,0,100,30), "Record = " );
         
-        GUI.Box(new Rect(0,28,100,30), "Carrot = ");
+        GUI.Box(new Rect(0,28,100,30), "Time = ");
     }
 }
