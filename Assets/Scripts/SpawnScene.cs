@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnScene : MonoBehaviour
 {
+    //Скрипт отвечает за спавн сцены
     public GameObject scene;
     public Transform spawn;
 

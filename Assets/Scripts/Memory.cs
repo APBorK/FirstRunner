@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class Memory : MonoBehaviour
 {
+    //Скрипт отвечает за вспомогательные значения 
     public static int NextPositionScene;
     public static int NextPositionCar;
     
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
         NextPositionScene = 100;

@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 
 public class SpawnCar : MonoBehaviour
 {
+    //Скрипт отвечает за за создание позиции для спавна и размищение объектов по данным позициям
     public Transform spawn;
     public GameObject objToSpawn;
     private Vector3[] line0;

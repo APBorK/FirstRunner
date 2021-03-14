@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Impingement : MonoBehaviour
 {
-    public GameObject Car; 
+    // Класс отвечает за столкновение с объектом
+    public GameObject car;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(Car);
+            Destroy(car);
             ++SpeedController.ImpingementCount;
         }
     }

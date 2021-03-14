@@ -5,7 +5,6 @@ using UnityEngine.Serialization;
 
 public class MovePlayer : MonoBehaviour
 {
-    //summery
     // Класс отвечает за движение Player
     
     public static float speed;

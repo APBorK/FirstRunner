@@ -436,4 +436,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Car: {fileID: 100008}
+  car: {fileID: 100008}

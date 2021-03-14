@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - SpawnCar
+  - Car
+  - Bot
   layers:
   - Default
   - TransparentFX
