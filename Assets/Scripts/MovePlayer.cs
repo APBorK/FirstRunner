@@ -8,18 +8,19 @@ public class MovePlayer : MonoBehaviour
     //summery
     // Класс отвечает за движение Player
     
-    public float speed = 5;
+    public static float speed;
     public float firstLinePosition,
         laneDistance,
         sideSpeed;
-    
-    private Vector3 _moveVector;
+
+    public static Vector3 _moveVector;
     private int _trafficLineNumber = 1;
     private CharacterController _movingSpace;
 
 
     void Start()
     {
+        speed = 10;
         _movingSpace = GetComponent<CharacterController>();
     }
     
