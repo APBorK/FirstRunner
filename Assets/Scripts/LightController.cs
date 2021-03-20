@@ -7,10 +7,6 @@ public class LightController : MonoBehaviour
     public GameObject[] light;
     private float Timer = 1;
     private float Timer2 = 2;
-
-    void Start()
-    {
-    }
     
     void Update() 
     {
