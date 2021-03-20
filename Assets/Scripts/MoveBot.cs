@@ -8,11 +8,12 @@ public class MoveBot : MonoBehaviour
 {
     //Скрипт отвечает за приследование Player
 
-    public static float speed;
+    public static float Speed;
+
     public float firstLinePosition,
         laneDistance,
         sideSpeed;
-    
+
     private Vector3 _moveVector;
     private int _trafficLineNumber = 1;
     private CharacterController _movingSpace;
@@ -20,16 +21,16 @@ public class MoveBot : MonoBehaviour
 
     void Start()
     {
-        speed = 10;
+        Speed = 10;
         _movingSpace = GetComponent<CharacterController>();
     }
-    
+
     void Update()
     {
-        _moveVector.z = speed;
+        _moveVector.z = Speed;
         _moveVector *= Time.deltaTime;
 
-        _moveVector.x = MovePlayer._moveVector.x;
+        _moveVector.x = MovePlayer.MoveVector.x;
 
         Vector3 newPosition = transform.position;
         newPosition.x = Mathf.Lerp(newPosition.x, firstLinePosition + (_trafficLineNumber * laneDistance),

@@ -15,31 +15,30 @@ public class GameOver : MonoBehaviour
 
     void Update()
     {
-        if (MovePlayer.speed == 0)
+        if (MovePlayer.Speed == 0)
         {
             Destroy(Player);
             RestartLevel();
         }
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bot"))
         {
             Destroy(Player);
             RestartLevel();
-
-
         }
     }
+
     void RestartLevel()
     {
-        
     }
+
     void OnGUI()
     {
-        GUI.Box(new Rect(0,0,100,30), "Record = " );
-        
-        GUI.Box(new Rect(0,28,100,30), "Time = ");
+        GUI.Box(new Rect(0, 0, 100, 30), "Record = ");
+
+        GUI.Box(new Rect(0, 28, 100, 30), "Time = ");
     }
 }

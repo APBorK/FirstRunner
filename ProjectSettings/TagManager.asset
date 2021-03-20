@@ -7,6 +7,7 @@ TagManager:
   - SpawnCar
   - Car
   - Bot
+  - Energ
   layers:
   - Default
   - TransparentFX

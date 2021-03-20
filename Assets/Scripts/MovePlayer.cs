@@ -6,34 +6,35 @@ using UnityEngine.Serialization;
 public class MovePlayer : MonoBehaviour
 {
     // Класс отвечает за движение Player
-    
-    public static float speed;
+
+    public static float Speed;
+
     public float firstLinePosition,
         laneDistance,
         sideSpeed;
 
-    public static Vector3 _moveVector;
+    public static Vector3 MoveVector;
     private int _trafficLineNumber = 1;
     private CharacterController _movingSpace;
 
 
     void Start()
     {
-        speed = 10;
+        Speed = 10;
         _movingSpace = GetComponent<CharacterController>();
     }
-    
+
     void Update()
     {
-        _moveVector.z = speed;
-        _moveVector *= Time.deltaTime;
+        MoveVector.z = Speed;
+        MoveVector *= Time.deltaTime;
 
-        _moveVector.x = Input.GetAxis("Horizontal") * sideSpeed;
+        MoveVector.x = Input.GetAxis("Horizontal") * sideSpeed;
 
         Vector3 newPosition = transform.position;
         newPosition.x = Mathf.Lerp(newPosition.x, firstLinePosition + (_trafficLineNumber * laneDistance),
             Time.deltaTime * sideSpeed);
         transform.position = newPosition;
-        _movingSpace.Move(_moveVector);
+        _movingSpace.Move(MoveVector);
     }
 }
