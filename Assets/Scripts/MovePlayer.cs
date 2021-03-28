@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class MovePlayer : MonoBehaviour
 {
     // Класс отвечает за движение Player
 
-    public static float Speed;
+    public static float speed;
 
     public float firstLinePosition,
         laneDistance,
@@ -20,13 +17,13 @@ public class MovePlayer : MonoBehaviour
 
     void Start()
     {
-        Speed = 10;
+        speed = 10;
         _movingSpace = GetComponent<CharacterController>();
     }
 
     void Update()
     {
-        MoveVector.z = Speed;
+        MoveVector.z = speed;
         MoveVector *= Time.deltaTime;
 
         MoveVector.x = Input.GetAxis("Horizontal") * sideSpeed;

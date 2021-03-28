@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 
 public class CameraController : MonoBehaviour
 {
@@ -15,6 +14,10 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position = player.transform.position + _offset;
+        if (player != null)
+        {
+            transform.position = player.transform.position + _offset;
+        }
+        
     }
 }

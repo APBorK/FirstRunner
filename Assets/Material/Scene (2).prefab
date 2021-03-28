@@ -497,9 +497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 2369096723351590514}
-  - {fileID: 995106927800165490}
+  redlight: {fileID: 2369096723351590514}
+  bluelight: {fileID: 995106927800165490}
 --- !u!1 &513047959497625955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,9 +1511,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 7467034600016139212}
-  - {fileID: 3723564036255642195}
+  redlight: {fileID: 7467034600016139212}
+  bluelight: {fileID: 3723564036255642195}
 --- !u!1 &976533325520217119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,6 +1523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764397727635323333}
   - component: {fileID: 8205803327732669145}
+  - component: {fileID: 3551136263982816856}
   m_Layer: 0
   m_Name: ckupthPickup (3)
   m_TagString: Energ
@@ -1558,8 +1557,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2.02, z: 1}
   m_Center: {x: -8.824389e-18, y: -0.102483444, z: 1.0269563e-15}
+--- !u!114 &3551136263982816856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976533325520217119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 976533325520217119}
 --- !u!1 &994082685331798343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,9 +2396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 7944204823799199595}
-  - {fileID: 6170881459282776682}
+  redlight: {fileID: 7944204823799199595}
+  bluelight: {fileID: 6170881459282776682}
 --- !u!1 &1314169502378025471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,9 +2619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 8325836478150327634}
-  - {fileID: 7969788168637124629}
+  redlight: {fileID: 8325836478150327634}
+  bluelight: {fileID: 7969788168637124629}
 --- !u!1 &1408595944357645078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,9 +2923,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 3816337969326344607}
-  - {fileID: 5785838108533108866}
+  redlight: {fileID: 3816337969326344607}
+  bluelight: {fileID: 5785838108533108866}
 --- !u!1 &1540679580359247448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3100,6 +3109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6435433036696471236}
   - component: {fileID: 3270665566002290296}
+  - component: {fileID: 7498939983664974513}
   m_Layer: 0
   m_Name: ckupthPickup
   m_TagString: Energ
@@ -3133,8 +3143,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2.02, z: 1}
   m_Center: {x: -8.824389e-18, y: -0.102483444, z: 1.0269563e-15}
+--- !u!114 &7498939983664974513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649270524772238319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 1649270524772238319}
 --- !u!1 &1654264891819996601
 GameObject:
   m_ObjectHideFlags: 0
@@ -4247,9 +4270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 4509745933671264920}
-  - {fileID: 2205726048903199289}
+  redlight: {fileID: 4509745933671264920}
+  bluelight: {fileID: 2205726048903199289}
 --- !u!1 &2147459773926653236
 GameObject:
   m_ObjectHideFlags: 0
@@ -5143,9 +5165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 1408595944357645078}
-  - {fileID: 7808936605310975371}
+  redlight: {fileID: 1408595944357645078}
+  bluelight: {fileID: 7808936605310975371}
 --- !u!1 &2723060676359211808
 GameObject:
   m_ObjectHideFlags: 0
@@ -5436,9 +5457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 994082685331798343}
-  - {fileID: 5995992791063870778}
+  redlight: {fileID: 994082685331798343}
+  bluelight: {fileID: 5995992791063870778}
 --- !u!1 &3152572275555790504
 GameObject:
   m_ObjectHideFlags: 0
@@ -5660,9 +5680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 7027381519475272673}
-  - {fileID: 4303331160916377296}
+  redlight: {fileID: 7027381519475272673}
+  bluelight: {fileID: 4303331160916377296}
 --- !u!1 &3204619681634936266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6532,9 +6551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 6111928131209615453}
-  - {fileID: 4041245803514645779}
+  redlight: {fileID: 6111928131209615453}
+  bluelight: {fileID: 4041245803514645779}
 --- !u!1 &3948819475111530413
 GameObject:
   m_ObjectHideFlags: 0
@@ -12923,6 +12941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4338832803849722914}
+  - component: {fileID: 5163969617739296933}
   m_Layer: 0
   m_Name: Scene (2)
   m_TagString: Untagged
@@ -12973,6 +12992,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5163969617739296933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4338832803849722913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27196c862de92d3438884b218767a738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4338832803859503892
 GameObject:
   m_ObjectHideFlags: 0
@@ -14678,9 +14709,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 3558142874346180266}
-  - {fileID: 2607709785483863865}
+  redlight: {fileID: 3558142874346180266}
+  bluelight: {fileID: 2607709785483863865}
 --- !u!1 &5136400204658784403
 GameObject:
   m_ObjectHideFlags: 0
@@ -15064,9 +15094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 1160156941257984522}
-  - {fileID: 1879080545139892560}
+  redlight: {fileID: 1160156941257984522}
+  bluelight: {fileID: 1879080545139892560}
 --- !u!1 &5330934465985487367
 GameObject:
   m_ObjectHideFlags: 0
@@ -15390,9 +15419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 5136400204658784403}
-  - {fileID: 404079528787670336}
+  redlight: {fileID: 5136400204658784403}
+  bluelight: {fileID: 404079528787670336}
 --- !u!1 &5657006949512422775
 GameObject:
   m_ObjectHideFlags: 0
@@ -15776,9 +15804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 9056095456951689009}
-  - {fileID: 3152572275555790504}
+  redlight: {fileID: 9056095456951689009}
+  bluelight: {fileID: 3152572275555790504}
 --- !u!1 &5894277117979025351
 GameObject:
   m_ObjectHideFlags: 0
@@ -16324,9 +16351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 8854404475437689360}
-  - {fileID: 6763087819270070002}
+  redlight: {fileID: 8854404475437689360}
+  bluelight: {fileID: 6763087819270070002}
 --- !u!1 &6111928131209615453
 GameObject:
   m_ObjectHideFlags: 0
@@ -16430,6 +16456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145657085863356527}
   - component: {fileID: 2470021091522323877}
+  - component: {fileID: 3757526973626113780}
   m_Layer: 0
   m_Name: ckupthPickup (1)
   m_TagString: Energ
@@ -16463,8 +16490,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2.02, z: 1}
   m_Center: {x: -8.824389e-18, y: -0.102483444, z: 1.0269563e-15}
+--- !u!114 &3757526973626113780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6163249191101602188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 6163249191101602188}
 --- !u!1 &6170881459282776682
 GameObject:
   m_ObjectHideFlags: 0
@@ -16686,9 +16726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 8239812023033406732}
-  - {fileID: 706430360324575558}
+  redlight: {fileID: 8239812023033406732}
+  bluelight: {fileID: 706430360324575558}
 --- !u!1 &6345319060547502875
 GameObject:
   m_ObjectHideFlags: 0
@@ -17105,9 +17144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 7214229518060849977}
-  - {fileID: 1244640951354558130}
+  redlight: {fileID: 7214229518060849977}
+  bluelight: {fileID: 1244640951354558130}
 --- !u!1 &6535863996220235272
 GameObject:
   m_ObjectHideFlags: 0
@@ -17236,9 +17274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 3561233081361132438}
-  - {fileID: 3948819475111530413}
+  redlight: {fileID: 3561233081361132438}
+  bluelight: {fileID: 3948819475111530413}
 --- !u!1 &6546912238719862028
 GameObject:
   m_ObjectHideFlags: 0
@@ -17703,9 +17740,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 1314169502378025471}
-  - {fileID: 6346272560474392229}
+  redlight: {fileID: 1314169502378025471}
+  bluelight: {fileID: 6346272560474392229}
 --- !u!1 &6938653937529316122
 GameObject:
   m_ObjectHideFlags: 0
@@ -18668,9 +18704,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 8035934182333302396}
-  - {fileID: 1625936728579462971}
+  redlight: {fileID: 8035934182333302396}
+  bluelight: {fileID: 1244640951354558130}
 --- !u!1 &7467034600016139212
 GameObject:
   m_ObjectHideFlags: 0
@@ -20466,6 +20501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6556818099755699454}
   - component: {fileID: 2184131761875557761}
+  - component: {fileID: 3536285699480379594}
   m_Layer: 0
   m_Name: ckupthPickup (2)
   m_TagString: Energ
@@ -20499,8 +20535,21 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2.02, z: 1}
   m_Center: {x: -8.824389e-18, y: -0.102483444, z: 1.0269563e-15}
+--- !u!114 &3536285699480379594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8755979094010956544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 8755979094010956544}
 --- !u!1 &8854404475437689360
 GameObject:
   m_ObjectHideFlags: 0
@@ -20722,9 +20771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light:
-  - {fileID: 4530726807215420914}
-  - {fileID: 3204619681634936266}
+  redlight: {fileID: 4530726807215420914}
+  bluelight: {fileID: 3204619681634936266}
 --- !u!1 &8887379165262333941
 GameObject:
   m_ObjectHideFlags: 0

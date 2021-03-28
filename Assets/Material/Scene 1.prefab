@@ -914,6 +914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3198001830391778943}
+  - component: {fileID: 8510067260912226201}
   m_Layer: 0
   m_Name: Scene 1
   m_TagString: Untagged
@@ -960,6 +961,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8510067260912226201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198001830391778940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27196c862de92d3438884b218767a738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3198001830415287177
 GameObject:
   m_ObjectHideFlags: 0
@@ -7775,6 +7788,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3198001830391778943}
     m_Modifications:
+    - target: {fileID: 7800530346182472563, guid: a90da62a514617f4691dbf251a8f172c, type: 3}
+      propertyPath: m_Size.y
+      value: 2.02
+      objectReference: {fileID: 0}
     - target: {fileID: 7827967022361780729, guid: a90da62a514617f4691dbf251a8f172c, type: 3}
       propertyPath: m_Name
       value: ckupthPickup
@@ -8219,6 +8236,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3198001830391778943}
     m_Modifications:
+    - target: {fileID: 7800530346182472563, guid: a90da62a514617f4691dbf251a8f172c, type: 3}
+      propertyPath: m_Size.y
+      value: 2.02
+      objectReference: {fileID: 0}
     - target: {fileID: 7827967022361780729, guid: a90da62a514617f4691dbf251a8f172c, type: 3}
       propertyPath: m_Name
       value: ckupthPickup (1)

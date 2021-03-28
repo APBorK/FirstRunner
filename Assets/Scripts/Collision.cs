@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Impingement : MonoBehaviour
+public class Collision : MonoBehaviour
 {
     // Класс отвечает за столкновение с объектом
     public GameObject car;
@@ -11,7 +9,8 @@ public class Impingement : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(car);
-            ++SpeedController.ImpingementCount;
+            ++MoveBot.speed;
+            --MovePlayer.speed;
         }
     }
 }

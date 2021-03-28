@@ -1,23 +1,21 @@
-using System;
-using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
     // Класс отвечает за проигрышь при низкой скорости и столкновение с ботом
-    public GameObject Player;
-    private Animator _animator;
-
-    private void Start()
-    {
-        _animator = GetComponent<Animator>();
-    }
+    public GameObject player;
+    
 
     void Update()
     {
-        if (MovePlayer.Speed == 0)
+        if (EnergyController.Energy == 0)
         {
-            Destroy(Player);
+            Destroy(player);
+        }
+        
+        if (MovePlayer.speed == 0)
+        {
+            Destroy(player);
             RestartLevel();
         }
     }
@@ -26,7 +24,7 @@ public class GameOver : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bot"))
         {
-            Destroy(Player);
+            Destroy(player);
             RestartLevel();
         }
     }

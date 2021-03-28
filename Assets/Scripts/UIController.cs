@@ -1,18 +1,26 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-   
+    public GameObject player;
+    public GameObject restartLevel;
+    public GameObject gameOver;
+    public Text energy;
+    public Text record;
+    private float _recordValue;
 
     private void Update()
     {
+        if (player == null)
+        {
+            gameOver.SetActive(true);
+            restartLevel.SetActive(true);
+        }
+        _recordValue += Time.deltaTime;
+        record.text = "Record: " + (int) _recordValue;
+        EnergyController.Energy -= Time.deltaTime;
+        energy.text = "Energy: " + (int) EnergyController.Energy;
     }
-
-    void OnGUI()
-    {
-        GUI.Box(new Rect(0, 0, 100, 30), "Record = ");
-    }
+    
 }

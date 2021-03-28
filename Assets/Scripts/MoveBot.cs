@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -8,7 +5,7 @@ public class MoveBot : MonoBehaviour
 {
     //Скрипт отвечает за приследование Player
 
-    public static float Speed;
+    public static float speed;
 
     public float firstLinePosition,
         laneDistance,
@@ -21,13 +18,13 @@ public class MoveBot : MonoBehaviour
 
     void Start()
     {
-        Speed = 10;
+        speed = 10;
         _movingSpace = GetComponent<CharacterController>();
     }
 
     void Update()
     {
-        _moveVector.z = Speed;
+        _moveVector.z = speed;
         _moveVector *= Time.deltaTime;
 
         _moveVector.x = MovePlayer.MoveVector.x;

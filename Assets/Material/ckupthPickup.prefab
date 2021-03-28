@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7833826660741228103}
   - component: {fileID: 7800530346182472563}
+  - component: {fileID: 6467655662554004724}
   m_Layer: 0
   m_Name: ckupthPickup
   m_TagString: Untagged
@@ -126,6 +127,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: -8.824389e-18, y: -0.102483444, z: 1.0269563e-15}
+--- !u!114 &6467655662554004724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827967022361780729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energy: {fileID: 7827967022361780729}
 --- !u!1 &7828089601553946871
 GameObject:
   m_ObjectHideFlags: 0
