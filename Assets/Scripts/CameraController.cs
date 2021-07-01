@@ -3,20 +3,22 @@
 public class CameraController : MonoBehaviour
 {
     // Класс отвечает за передвижение камеры к игроку
-    public GameObject player;
+    [SerializeField]
+    private GameObject _player;
     private Vector3 _offset;
 
     void Start()
     {
-        _offset = transform.position - player.transform.position;
+        _offset = transform.position - _player.transform.position;
     }
 
 
     void LateUpdate()
     {
-        if (player != null)
+        if (_player != null)
         {
-            transform.position = player.transform.position + _offset;
+            transform.position = new Vector3(transform.position.x, transform.position.y,_player.transform.position.z + 
+            _offset.z) ;
         }
         
     }

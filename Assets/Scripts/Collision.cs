@@ -1,16 +1,19 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Collision : MonoBehaviour
 {
     // Класс отвечает за столкновение с объектом
-    public GameObject car;
+    [FormerlySerializedAs("car")] [SerializeField]
+    private GameObject _car;
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(car);
-            ++MoveBot.speed;
-            --MovePlayer.speed;
+            Destroy(_car);
+            ++MoveBot.Speed;
+            --MovePlayer.Speed;
         }
     }
 }

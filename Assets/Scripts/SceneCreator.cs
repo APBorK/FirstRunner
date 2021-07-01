@@ -1,11 +1,14 @@
  using UnityEngine;
-using Random = UnityEngine.Random;
+ using UnityEngine.Serialization;
+ using Random = UnityEngine.Random;
 
 public class SceneCreator : MonoBehaviour
 {
     //Скрипт отвечает за спавн сцены
-    public GameObject[] scene;
-    public Transform scenePosition;
+    [FormerlySerializedAs("scene")] [SerializeField]
+    private GameObject[] _scene;
+    [FormerlySerializedAs("scenePosition")] [SerializeField]
+    private Transform _scenePosition;
     private int _distance = 100;
     
 
@@ -14,16 +17,17 @@ public class SceneCreator : MonoBehaviour
         if (spawn.gameObject.CompareTag("Player"))
         {
             CreatesScene();
-            ++MovePlayer.speed;
+            ++MovePlayer.Speed;
         }
     }
 
  
     void CreatesScene()
     {
-        Vector3 spawnPos = new Vector3(scenePosition.position.x, 
-            scenePosition.position.y,scenePosition.position.z + _distance); 
-        Instantiate(scene[RandomCreationScene()], spawnPos, Quaternion.identity);
+        var position = _scenePosition.position;
+        Vector3 spawnPos = new Vector3(position.x, 
+            position.y,position.z + _distance); 
+        Instantiate(_scene[RandomCreationScene()], spawnPos, Quaternion.identity);
 
     }
     
@@ -31,7 +35,7 @@ public class SceneCreator : MonoBehaviour
     
     private int RandomCreationScene()
     {
-        return Random.Range(1, scene.Length);
+        return Random.Range(1, _scene.Length);
     }
 
     

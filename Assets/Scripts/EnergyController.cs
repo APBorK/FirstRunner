@@ -1,21 +1,24 @@
+using System;
 using UnityEngine;
 
 public class EnergyController : MonoBehaviour
 {
+    public static float Energy
+    {
+        get => _energy ;
+        set => _energy = value;
+    }
     
-    public GameObject player;
-    public static float Energy ;
+    private static float _energy;
 
     private void Start()
     {
-        Energy = 1000;
-         
+        _energy = 100;
     }
-    
 
     private void Update()
     {
-        Energy -= Time.deltaTime;
+        _energy -= Time.deltaTime;
     }
 
 }

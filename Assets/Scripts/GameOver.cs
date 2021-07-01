@@ -1,22 +1,22 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GameOver : MonoBehaviour
 {
     // Класс отвечает за проигрышь при низкой скорости и столкновение с ботом
-    public GameObject player;
-    
+    [FormerlySerializedAs("player")] [SerializeField]
+    private GameObject _player;
 
     void Update()
     {
         if (EnergyController.Energy == 0)
         {
-            Destroy(player);
+            Destroy(_player);
         }
         
-        if (MovePlayer.speed == 0)
+        if (MovePlayer.Speed == 0)
         {
-            Destroy(player);
-            RestartLevel();
+            Destroy(_player);
         }
     }
 
@@ -24,13 +24,8 @@ public class GameOver : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bot"))
         {
-            Destroy(player);
-            RestartLevel();
+            Destroy(_player);
         }
-    }
-
-    void RestartLevel()
-    {
     }
     
 }

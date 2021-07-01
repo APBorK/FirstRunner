@@ -973,6 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27196c862de92d3438884b218767a738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeTime: 20
 --- !u!1 &3198001830415287177
 GameObject:
   m_ObjectHideFlags: 0
@@ -6644,11 +6645,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b1747e63edb374c8b732233dc0b854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene:
+  _scene:
   - {fileID: 8364401108300433057, guid: bf0899b9cd7bfba4199811d158f36a10, type: 3}
   - {fileID: 4338832803849722913, guid: 4ba93539828615a4aa4734ae2222f10c, type: 3}
   - {fileID: 3198001830391778940}
-  scenePosition: {fileID: 3198001830391778943}
+  _scenePosition: {fileID: 3198001830391778943}
 --- !u!1 &3198001832097174507
 GameObject:
   m_ObjectHideFlags: 0

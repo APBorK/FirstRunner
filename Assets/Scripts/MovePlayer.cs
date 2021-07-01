@@ -3,35 +3,47 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     // Класс отвечает за движение Player
-
-    public static float speed;
-
-    public float firstLinePosition,
+    
+    [SerializeField]
+    private float firstLinePosition,
         laneDistance,
         sideSpeed;
 
-    public static Vector3 MoveVector;
+    public static float Speed
+    {
+        get => _speed ;
+        set => _speed = value;
+    }
+    
+    public static Vector3 MoveVector
+    {
+        get => _moveVector ;
+        set => _moveVector = value;
+    }
+
+    private static float _speed;
+    private static Vector3 _moveVector;
     private int _trafficLineNumber = 1;
     private CharacterController _movingSpace;
 
 
     void Start()
     {
-        speed = 10;
+        _speed = 10;
         _movingSpace = GetComponent<CharacterController>();
     }
 
     void Update()
     {
-        MoveVector.z = speed;
-        MoveVector *= Time.deltaTime;
+        _moveVector.z = _speed;
+        _moveVector *= Time.deltaTime;
 
-        MoveVector.x = Input.GetAxis("Horizontal") * sideSpeed;
+        _moveVector.x = Input.GetAxis("Horizontal") * sideSpeed;
 
         Vector3 newPosition = transform.position;
         newPosition.x = Mathf.Lerp(newPosition.x, firstLinePosition + (_trafficLineNumber * laneDistance),
             Time.deltaTime * sideSpeed);
         transform.position = newPosition;
-        _movingSpace.Move(MoveVector);
+        _movingSpace.Move(_moveVector);
     }
 }

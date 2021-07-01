@@ -1,14 +1,19 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Energy : MonoBehaviour
 {
-    public GameObject energy;
+    [SerializeField]
+    private GameObject energy;
+
+    
     
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            EnergyController.Energy += 500;
+            EnergyController.Energy += 50;
+            ++MovePlayer.Speed;
             Destroy(energy);
         }
     }

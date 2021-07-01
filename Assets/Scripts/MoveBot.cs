@@ -4,13 +4,19 @@ using UnityEngine;
 public class MoveBot : MonoBehaviour
 {
     //Скрипт отвечает за приследование Player
-
-    public static float speed;
-
-    public float firstLinePosition,
+    
+    [SerializeField]
+    private float firstLinePosition,
         laneDistance,
         sideSpeed;
+    
+    public static float Speed
+    {
+        get => _speed ;
+        set => _speed = value;
+    }
 
+    private static float _speed;
     private Vector3 _moveVector;
     private int _trafficLineNumber = 1;
     private CharacterController _movingSpace;
@@ -18,13 +24,13 @@ public class MoveBot : MonoBehaviour
 
     void Start()
     {
-        speed = 10;
+        _speed = 9;
         _movingSpace = GetComponent<CharacterController>();
     }
 
     void Update()
     {
-        _moveVector.z = speed;
+        _moveVector.z = _speed;
         _moveVector *= Time.deltaTime;
 
         _moveVector.x = MovePlayer.MoveVector.x;

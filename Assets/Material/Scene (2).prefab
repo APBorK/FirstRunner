@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 449928602038086484}
+  _car: {fileID: 449928602038086484}
 --- !u!114 &7037821645150313205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,8 +497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 2369096723351590514}
-  bluelight: {fileID: 995106927800165490}
+  _redlight: {fileID: 2369096723351590514}
+  _bluelight: {fileID: 995106927800165490}
 --- !u!1 &513047959497625955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,11 +1054,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b1747e63edb374c8b732233dc0b854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene:
+  _scene:
   - {fileID: 8364401108300433057, guid: bf0899b9cd7bfba4199811d158f36a10, type: 3}
   - {fileID: 4338832803849722913}
   - {fileID: 3198001830391778940, guid: df1919686977f2a4a931f000885d5fe9, type: 3}
-  scenePosition: {fileID: 4338832803849722914}
+  _scenePosition: {fileID: 4338832803849722914}
 --- !u!1 &887419395756058193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 965508120344817806}
+  _car: {fileID: 965508120344817806}
 --- !u!114 &238242560143456961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,8 +1511,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 7467034600016139212}
-  bluelight: {fileID: 3723564036255642195}
+  _redlight: {fileID: 7467034600016139212}
+  _bluelight: {fileID: 3723564036255642195}
 --- !u!1 &976533325520217119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energy: {fileID: 976533325520217119}
+  _energy: {fileID: 976533325520217119}
 --- !u!1 &994082685331798343
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,7 +2383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 1260017272919332274}
+  _car: {fileID: 1260017272919332274}
 --- !u!114 &4935543401657073988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2396,8 +2396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 7944204823799199595}
-  bluelight: {fileID: 6170881459282776682}
+  _redlight: {fileID: 7944204823799199595}
+  _bluelight: {fileID: 6170881459282776682}
 --- !u!1 &1314169502378025471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,7 +2606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 1365197243544728857}
+  _car: {fileID: 1365197243544728857}
 --- !u!114 &7893817941917929649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2619,8 +2619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 8325836478150327634}
-  bluelight: {fileID: 7969788168637124629}
+  _redlight: {fileID: 8325836478150327634}
+  _bluelight: {fileID: 7969788168637124629}
 --- !u!1 &1408595944357645078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,7 +2910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 1508502745776155678}
+  _car: {fileID: 1508502745776155678}
 --- !u!114 &7692882207467695406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2923,8 +2923,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 3816337969326344607}
-  bluelight: {fileID: 5785838108533108866}
+  _redlight: {fileID: 3816337969326344607}
+  _bluelight: {fileID: 5785838108533108866}
 --- !u!1 &1540679580359247448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,7 +3157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energy: {fileID: 1649270524772238319}
+  _energy: {fileID: 1649270524772238319}
 --- !u!1 &1654264891819996601
 GameObject:
   m_ObjectHideFlags: 0
@@ -4257,7 +4257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 2111501945144850440}
+  _car: {fileID: 2111501945144850440}
 --- !u!114 &4434671193844124115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4270,8 +4270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 4509745933671264920}
-  bluelight: {fileID: 2205726048903199289}
+  _redlight: {fileID: 4509745933671264920}
+  _bluelight: {fileID: 2205726048903199289}
 --- !u!1 &2147459773926653236
 GameObject:
   m_ObjectHideFlags: 0
@@ -5152,7 +5152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 2647707346796457348}
+  _car: {fileID: 2647707346796457348}
 --- !u!114 &2966976385193582101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5165,8 +5165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 1408595944357645078}
-  bluelight: {fileID: 7808936605310975371}
+  _redlight: {fileID: 1408595944357645078}
+  _bluelight: {fileID: 7808936605310975371}
 --- !u!1 &2723060676359211808
 GameObject:
   m_ObjectHideFlags: 0
@@ -5444,7 +5444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 2878246394841566807}
+  _car: {fileID: 2878246394841566807}
 --- !u!114 &3691163985309246714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5457,8 +5457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 994082685331798343}
-  bluelight: {fileID: 5995992791063870778}
+  _redlight: {fileID: 994082685331798343}
+  _bluelight: {fileID: 5995992791063870778}
 --- !u!1 &3152572275555790504
 GameObject:
   m_ObjectHideFlags: 0
@@ -5667,7 +5667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 3177048083912051166}
+  _car: {fileID: 3177048083912051166}
 --- !u!114 &533362827507436488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5680,8 +5680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 7027381519475272673}
-  bluelight: {fileID: 4303331160916377296}
+  _redlight: {fileID: 7027381519475272673}
+  _bluelight: {fileID: 4303331160916377296}
 --- !u!1 &3204619681634936266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6538,7 +6538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 3935597428198395537}
+  _car: {fileID: 3935597428198395537}
 --- !u!114 &6556532128894228848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6551,8 +6551,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 6111928131209615453}
-  bluelight: {fileID: 4041245803514645779}
+  _redlight: {fileID: 6111928131209615453}
+  _bluelight: {fileID: 4041245803514645779}
 --- !u!1 &3948819475111530413
 GameObject:
   m_ObjectHideFlags: 0
@@ -13004,6 +13004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27196c862de92d3438884b218767a738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeTime: 20
 --- !u!1 &4338832803859503892
 GameObject:
   m_ObjectHideFlags: 0
@@ -14696,7 +14697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 5084828023167918248}
+  _car: {fileID: 5084828023167918248}
 --- !u!114 &6747734996672504505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14709,8 +14710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 3558142874346180266}
-  bluelight: {fileID: 2607709785483863865}
+  _redlight: {fileID: 3558142874346180266}
+  _bluelight: {fileID: 2607709785483863865}
 --- !u!1 &5136400204658784403
 GameObject:
   m_ObjectHideFlags: 0
@@ -15081,7 +15082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 5253420832326647027}
+  _car: {fileID: 5253420832326647027}
 --- !u!114 &4530571002940063577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15094,8 +15095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 1160156941257984522}
-  bluelight: {fileID: 1879080545139892560}
+  _redlight: {fileID: 1160156941257984522}
+  _bluelight: {fileID: 1879080545139892560}
 --- !u!1 &5330934465985487367
 GameObject:
   m_ObjectHideFlags: 0
@@ -15406,7 +15407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 5639303138365996641}
+  _car: {fileID: 5639303138365996641}
 --- !u!114 &2271043712101908676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15419,8 +15420,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 5136400204658784403}
-  bluelight: {fileID: 404079528787670336}
+  _redlight: {fileID: 5136400204658784403}
+  _bluelight: {fileID: 404079528787670336}
 --- !u!1 &5657006949512422775
 GameObject:
   m_ObjectHideFlags: 0
@@ -15791,7 +15792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 5836481040125959070}
+  _car: {fileID: 5836481040125959070}
 --- !u!114 &3786464504344995471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15804,8 +15805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 9056095456951689009}
-  bluelight: {fileID: 3152572275555790504}
+  _redlight: {fileID: 9056095456951689009}
+  _bluelight: {fileID: 3152572275555790504}
 --- !u!1 &5894277117979025351
 GameObject:
   m_ObjectHideFlags: 0
@@ -16338,7 +16339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 6063027899340156801}
+  _car: {fileID: 6063027899340156801}
 --- !u!114 &1163218714386203555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16351,8 +16352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 8854404475437689360}
-  bluelight: {fileID: 6763087819270070002}
+  _redlight: {fileID: 8854404475437689360}
+  _bluelight: {fileID: 6763087819270070002}
 --- !u!1 &6111928131209615453
 GameObject:
   m_ObjectHideFlags: 0
@@ -16504,7 +16505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energy: {fileID: 6163249191101602188}
+  _energy: {fileID: 6163249191101602188}
 --- !u!1 &6170881459282776682
 GameObject:
   m_ObjectHideFlags: 0
@@ -16713,7 +16714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 6190702272002469325}
+  _car: {fileID: 6190702272002469325}
 --- !u!114 &3487014857568344453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16726,8 +16727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 8239812023033406732}
-  bluelight: {fileID: 706430360324575558}
+  _redlight: {fileID: 8239812023033406732}
+  _bluelight: {fileID: 706430360324575558}
 --- !u!1 &6345319060547502875
 GameObject:
   m_ObjectHideFlags: 0
@@ -17131,7 +17132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 6535337668228062925}
+  _car: {fileID: 6535337668228062925}
 --- !u!114 &4839294883416622960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17144,8 +17145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 7214229518060849977}
-  bluelight: {fileID: 1244640951354558130}
+  _redlight: {fileID: 7214229518060849977}
+  _bluelight: {fileID: 1244640951354558130}
 --- !u!1 &6535863996220235272
 GameObject:
   m_ObjectHideFlags: 0
@@ -17261,7 +17262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 6535863996220235272}
+  _car: {fileID: 6535863996220235272}
 --- !u!114 &5605157008840933095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17274,8 +17275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 3561233081361132438}
-  bluelight: {fileID: 3948819475111530413}
+  _redlight: {fileID: 3561233081361132438}
+  _bluelight: {fileID: 3948819475111530413}
 --- !u!1 &6546912238719862028
 GameObject:
   m_ObjectHideFlags: 0
@@ -17727,7 +17728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 6849315997319324819}
+  _car: {fileID: 6849315997319324819}
 --- !u!114 &7565529349189702717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17740,8 +17741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 1314169502378025471}
-  bluelight: {fileID: 6346272560474392229}
+  _redlight: {fileID: 1314169502378025471}
+  _bluelight: {fileID: 6346272560474392229}
 --- !u!1 &6938653937529316122
 GameObject:
   m_ObjectHideFlags: 0
@@ -18691,7 +18692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 7448907758956327443}
+  _car: {fileID: 7448907758956327443}
 --- !u!114 &2302199707489141664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18704,8 +18705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 8035934182333302396}
-  bluelight: {fileID: 1244640951354558130}
+  _redlight: {fileID: 8035934182333302396}
+  _bluelight: {fileID: 1244640951354558130}
 --- !u!1 &7467034600016139212
 GameObject:
   m_ObjectHideFlags: 0
@@ -20549,7 +20550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9052adb8fd2dc942b59c03777a74a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energy: {fileID: 8755979094010956544}
+  _energy: {fileID: 8755979094010956544}
 --- !u!1 &8854404475437689360
 GameObject:
   m_ObjectHideFlags: 0
@@ -20758,7 +20759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a3c4e286fbd6ad47b60bdc32467b3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 8854595161226785794}
+  _car: {fileID: 8854595161226785794}
 --- !u!114 &6651980497374554259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20771,8 +20772,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f235ed5fb8547a4e94530b67352221c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redlight: {fileID: 4530726807215420914}
-  bluelight: {fileID: 3204619681634936266}
+  _redlight: {fileID: 4530726807215420914}
+  _bluelight: {fileID: 3204619681634936266}
 --- !u!1 &8887379165262333941
 GameObject:
   m_ObjectHideFlags: 0
