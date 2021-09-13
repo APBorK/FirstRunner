@@ -5,35 +5,47 @@ public class FlashingLight : MonoBehaviour
 {
     [FormerlySerializedAs("redlight")] [SerializeField]
     private GameObject _redlight;
+
     [FormerlySerializedAs("bluelight")] [SerializeField]
     private GameObject _bluelight;
     
-    private float _timer = 2;
+    [SerializeField]
+    private float _mainLightTimer;
+    
+    private float _lightTimer;
 
     private void Start()
     {
-        _bluelight.SetActive(false);
+        _lightTimer = _mainLightTimer;
+        if (_mainLightTimer % 2 > 0)
+        {
+            _redlight.SetActive(false);
+        }
+        if (_mainLightTimer % 2 == 0 ) 
+        {
+            _bluelight.SetActive(false);
+        }
     }
 
-    void Update() 
+    void Update()
     {
-        _timer -= Time.deltaTime;
-        if (_timer < 1)
+        _lightTimer -= Time.deltaTime;
+        int integer = (int) _lightTimer;
+        if (integer % 2 != 0)
         {
             _redlight.SetActive(false);
             _bluelight.SetActive(true);
 
         }
-        
-        if (_timer < 0 ) 
+        if (integer % 2 == 0 ) 
         {
             _redlight.SetActive(true);
             _bluelight.SetActive(false);
-            _timer = 2;
-               
         }
 
-        
-
+        if (_lightTimer == 0)
+        {
+            _lightTimer = _mainLightTimer;
+        }
     }
 }

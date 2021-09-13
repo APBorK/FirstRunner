@@ -16,20 +16,20 @@ public class SpawnObject : MonoBehaviour
     [SerializeField] 
     private int _spawnCar;
     
-    [SerializeField] 
+    [SerializeField]
     private int _spawnEnergy;
     
+    [SerializeField]
     private float minX;
-    private float minZ;
+    [SerializeField]
     private float maxX;
+    
+    private float minZ;
     private float maxZ;
     private Vector3 _spawnPos;
 
     void Start()
     {
-        minX = -4F;
-        maxX = 12F;
-
         minZ = _spawn.position.z + _spawn.localScale.z/2;
         maxZ = _spawn.position.z - _spawn.localScale.z/2;
         for (int i = 0; i < _spawnCar; i++)

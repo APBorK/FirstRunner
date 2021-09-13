@@ -9,9 +9,12 @@ public class GameOver : MonoBehaviour
     [FormerlySerializedAs("player")] [SerializeField]
     private GameObject _player;
 
+    [SerializeField] 
+    private MovePlayer _energy;
+
     void Update()
     {
-        if (Energy.EnergyPoint == 0)
+        if (_energy.EnergyPoint == 0)
         {
             Destroy(_player);
         }
@@ -24,5 +27,5 @@ public class GameOver : MonoBehaviour
             Destroy(_player);
         }
     }
-    
+
 }

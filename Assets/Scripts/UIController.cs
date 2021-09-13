@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
+    [SerializeField] 
+    private MovePlayer _energy;
     [SerializeField]
     private GameObject player;
     [SerializeField]
@@ -37,7 +39,7 @@ public class UIController : MonoBehaviour
         {
             _recordValue += Time.deltaTime;
             point.text = "Point: " + (int) _recordValue;
-            energy.text = "Energy: " + (int) Energy.EnergyPoint;
+            energy.text = "Energy: " + (int) _energy.EnergyPoint; 
         }
         if (gameOver != null)
         {

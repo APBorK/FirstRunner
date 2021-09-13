@@ -13,8 +13,6 @@ public class Collision : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(_car);
-            ++MoveBot.SpeedBot;
-            --MovePlayer.SpeedPlayer;
         }
         
         if (other.gameObject.CompareTag("Bot"))

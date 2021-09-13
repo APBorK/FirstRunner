@@ -18,8 +18,6 @@ public class SceneCreator : MonoBehaviour
         if (spawn.gameObject.CompareTag("Player"))
         {
             CreatesScene();
-            ++MovePlayer.SpeedPlayer;
-            ++MoveBot.SpeedBot;
         }
     }
 

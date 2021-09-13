@@ -91,11 +91,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7833826660741228103}
   - component: {fileID: 7800530346182472563}
-  - component: {fileID: 1159052891472558774}
   - component: {fileID: 7240418657835126915}
   - component: {fileID: 306213353145136759}
   - component: {fileID: 3157110517908595260}
   - component: {fileID: 4594158595873725898}
+  - component: {fileID: 3771991668473529876}
   m_Layer: 0
   m_Name: ckupthPickup
   m_TagString: Energ
@@ -131,19 +131,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.59, z: 1}
   m_Center: {x: -8.824389e-18, y: 0.34, z: 1.0269563e-15}
---- !u!114 &1159052891472558774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7827967022361780729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eed1e3c54507b204f858868142edfc72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameObject: {fileID: 7827967022361780729}
 --- !u!65 &7240418657835126915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -199,6 +186,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 20
+--- !u!114 &3771991668473529876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827967022361780729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed1e3c54507b204f858868142edfc72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObject: {fileID: 7827967022361780729}
+  _addEnergy: 20
 --- !u!1 &7828089601553946871
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2605926644884474312}
   m_Layer: 0
   m_Name: SpawnScene (1)
-  m_TagString: Untagged
+  m_TagString: SpawnScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5848,7 +5848,7 @@ GameObject:
   - component: {fileID: 8519415085587918867}
   m_Layer: 0
   m_Name: Scene (2)
-  m_TagString: Untagged
+  m_TagString: SpawnScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5901,6 +5901,8 @@ MonoBehaviour:
   _energy: {fileID: 7827967022361780729, guid: a90da62a514617f4691dbf251a8f172c, type: 3}
   _spawnCar: 30
   _spawnEnergy: 10
+  minX: -4
+  maxX: 12
 --- !u!1 &4338832803859503892
 GameObject:
   m_ObjectHideFlags: 0

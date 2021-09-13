@@ -8,8 +8,12 @@ public class MoveController : MonoBehaviour
     protected float firstLinePosition,
         laneDistance,
         sideSpeed;
-    
-    protected int _trafficLineNumber = 1;
+        
+    [SerializeField]
+    protected int _trafficLineNumber;
+
+    [SerializeField] 
+    protected float _speed;
 
     protected void Move(Vector3 moveVector, float moveVectorObject, float speed,CharacterController movingSpace)
     {

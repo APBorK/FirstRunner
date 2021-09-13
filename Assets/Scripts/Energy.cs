@@ -4,28 +4,19 @@ namespace System
 {
     public class Energy : MonoBehaviour
     {
-        public static float EnergyPoint
+        public float AddEnergy
         {
-            get => _energy;
-            set => _energy = value;
+            get => _addEnergy;
+            set => _addEnergy = value;
         }
-        
         [SerializeField]
         private GameObject _gameObject;
+        [SerializeField] private float _addEnergy;
 
-        private static float _energy = 100;
-
-        private void Update()
-        {
-            _energy -= Time.deltaTime;
-        }
-        
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                _energy += 50;
-                ++MovePlayer.SpeedPlayer;
                 Destroy(_gameObject);
             }
         }
