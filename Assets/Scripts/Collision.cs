@@ -5,19 +5,29 @@ using UnityEngine.Serialization;
 /// </summary>
 public class Collision : MonoBehaviour
 {
-    [FormerlySerializedAs("car")] [SerializeField]
-    private GameObject _car;
+    [SerializeField]
+    private GameObject _gameObject;
     
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Destroy(_car);
+            Destroy(_gameObject);
         }
         
         if (other.gameObject.CompareTag("Bot"))
         {
-            Destroy(_car);
+            Destroy(_gameObject);
+        }
+        
+        if (other.gameObject.CompareTag("Car"))
+        {
+            Destroy(_gameObject);
+        }
+        
+        if (other.gameObject.CompareTag("Energ"))
+        {
+            Destroy(_gameObject);
         }
     }
 }

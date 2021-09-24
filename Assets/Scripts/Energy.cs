@@ -9,16 +9,8 @@ namespace System
             get => _addEnergy;
             set => _addEnergy = value;
         }
-        [SerializeField]
-        private GameObject _gameObject;
-        [SerializeField] private float _addEnergy;
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.CompareTag("Player"))
-            {
-                Destroy(_gameObject);
-            }
-        }
+        [SerializeField] 
+        private float _addEnergy;
+        
     }
 }
