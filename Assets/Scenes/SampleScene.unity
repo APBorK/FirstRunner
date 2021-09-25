@@ -1565,7 +1565,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1803,6 +1803,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SpawnScene
       objectReference: {fileID: 0}
+    - target: {fileID: 3659613505528941547, guid: df1919686977f2a4a931f000885d5fe9, type: 3}
+      propertyPath: _car
+      value: 
+      objectReference: {fileID: 5673415688557528373, guid: 5c5ed1817aab0f74780b8c6ca1983e78, type: 3}
     - target: {fileID: 3659613505528941547, guid: df1919686977f2a4a931f000885d5fe9, type: 3}
       propertyPath: maxX
       value: 12

@@ -5897,7 +5897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawn: {fileID: 4338832802215064819}
-  _car: {fileID: 5673415688557528373, guid: b44da1e41cb3f244493756a9734e012b, type: 3}
+  _car: {fileID: 5673415688557528373, guid: 5c5ed1817aab0f74780b8c6ca1983e78, type: 3}
   _energy: {fileID: 7827967022361780729, guid: a90da62a514617f4691dbf251a8f172c, type: 3}
   _spawnCar: 30
   _spawnEnergy: 10
